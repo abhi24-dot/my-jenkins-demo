@@ -1,0 +1,24 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build
+        run: echo "🚧 App build ho raha hai..."
+
+      - name: Test
+        run: echo "🧪 Tests run ho rahe hain..."
+
+      - name: Deploy
+        run: echo "🚀 App deploy ho gaya!"
