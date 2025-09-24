@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo '🚧 App build ho raha hai...'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo '🧪 Tests run ho rahe hain...'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo '🚀 App deploy ho gaya!'
+            }
+        }
+    }
+}
